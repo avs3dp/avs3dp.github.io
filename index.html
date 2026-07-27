@@ -1,100 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AVS3DP | 3D Printing Solutions</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AVS3DP maakt professionele 3D-prints, gepersonaliseerde cadeaus, sleutelhangers, decoratie en maatwerk in Suriname." />
+  <meta name="theme-color" content="#0b0b0d" />
+  <title>AVS3DP | Professional 3D Printing in Suriname</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="AVS3DP Home">
+        <img src="images/logo.png" alt="AVS3DP logo" />
+        <span>AVS3DP</span>
+      </a>
 
-<header>
-    <h1>AVS3DP</h1>
-    <p>Professional 3D Printing & Custom Designs</p>
-    <a href="#contact" class="button">Contact Us</a>
-</header>
+      <button class="menu-toggle" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-</nav>
+      <nav class="site-nav" aria-label="Hoofdnavigatie">
+        <a href="#home">Home</a>
+        <a href="#about">Over ons</a>
+        <a href="#services">Diensten</a>
+        <a href="#products">Producten</a>
+        <a href="#gallery">Galerij</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section id="about">
-<h2>About AVS3DP</h2>
-<p>
-AVS3DP creates high quality 3D printed products,
-custom designs and creative solutions for individuals
-and businesses.
-</p>
-</section>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">3D printing & custom design</span>
+          <h1>Van idee naar een <span>sterk 3D-product</span></h1>
+          <p>
+            AVS3DP maakt gepersonaliseerde producten, zakelijke branding, sleutelhangers,
+            decoratie en maatwerk voor klanten in Suriname.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Bekijk producten</a>
+            <a class="btn btn-secondary" href="https://wa.me/5977197175?text=Hallo%20AVS3DP,%20ik%20wil%20graag%20een%20offerte%20aanvragen." target="_blank" rel="noopener">Vraag een offerte</a>
+          </div>
+          <div class="hero-points">
+            <span>✓ Maatwerk</span>
+            <span>✓ Persoonlijke service</span>
+            <span>✓ Lokale productie</span>
+          </div>
+        </div>
 
+        <div class="hero-visual reveal">
+          <div class="hero-card">
+            <img src="images/product-01.jpg" alt="Voorbeeld van een AVS3DP product" />
+            <div class="hero-card-caption">
+              <strong>Custom made</strong>
+              <span>Speciaal gemaakt voor jouw idee</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="services">
-<h2>Our Services</h2>
+    <section class="section" id="about">
+      <div class="container split-grid">
+        <div class="section-copy reveal">
+          <span class="eyebrow">Over AVS3DP</span>
+          <h2>Creatieve 3D-oplossingen met aandacht voor detail</h2>
+          <p>
+            AVS3DP helpt particulieren en bedrijven om ideeën om te zetten in tastbare producten.
+            Van kleine gepersonaliseerde cadeaus tot zakelijke sleutelhangers en decoratieve prints:
+            elk project krijgt een nette afwerking en persoonlijke aandacht.
+          </p>
+          <p>
+            Heb je alleen een idee of voorbeeldfoto? Stuur die via WhatsApp. We bekijken samen wat mogelijk is.
+          </p>
+        </div>
 
-<div class="card">
-<h3>3D Printing</h3>
-<p>Custom parts, models, prototypes and creative designs.</p>
-</div>
+        <div class="stats-grid reveal">
+          <div class="stat-card"><strong>100%</strong><span>Maatwerk mogelijk</span></div>
+          <div class="stat-card"><strong>10+</strong><span>Productvoorbeelden</span></div>
+          <div class="stat-card"><strong>SR</strong><span>Gemaakt in Suriname</span></div>
+          <div class="stat-card"><strong>Direct</strong><span>Contact via WhatsApp</span></div>
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-<h3>Custom Design</h3>
-<p>Bring your ideas to life with professional 3D modeling.</p>
-</div>
+    <section class="section section-dark" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Onze diensten</span>
+          <h2>Wat AVS3DP voor jou kan maken</h2>
+          <p>Van een persoonlijk cadeau tot een product voor jouw onderneming.</p>
+        </div>
 
-<div class="card">
-<h3>Personalized Products</h3>
-<p>Unique gifts, decorations and custom items.</p>
-</div>
+        <div class="cards-grid">
+          <article class="service-card reveal">
+            <div class="icon">✦</div>
+            <h3>Gepersonaliseerde cadeaus</h3>
+            <p>Namen, teksten, geboortedetails en unieke ontwerpen voor speciale momenten.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">◆</div>
+            <h3>Zakelijke branding</h3>
+            <p>Logo-sleutelhangers, promotieartikelen en kleine oplages voor bedrijven.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">⬢</div>
+            <h3>Auto-accessoires</h3>
+            <p>Kentekenontwerpen, logo-items en gepersonaliseerde accessoires.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">◈</div>
+            <h3>Decoratie</h3>
+            <p>Wanddecoratie, religieuze objecten, naamstukken en interieuritems.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">⌁</div>
+            <h3>Ontwerp op aanvraag</h3>
+            <p>Wij helpen jouw idee omzetten naar een printbaar 3D-model.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">◎</div>
+            <h3>Kleine series</h3>
+            <p>Geschikt voor evenementen, medewerkers, klanten en promotieacties.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Producten</span>
+          <h2>Populaire mogelijkheden</h2>
+          <p>Onderstaande voorbeelden kunnen worden aangepast in kleur, naam, tekst of logo.</p>
+        </div>
 
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="images/product-02.jpg" alt="Bedrijfssleutelhangers" />
+            <div class="product-card-body">
+              <h3>Bedrijfssleutelhangers</h3>
+              <p>Met logo, bedrijfsnaam of korte tekst.</p>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="images/product-03.jpg" alt="Auto logo sleutelhangers" />
+            <div class="product-card-body">
+              <h3>Auto-logo sleutelhangers</h3>
+              <p>Voor verschillende automerken en persoonlijke stijlen.</p>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="images/product-04.jpg" alt="Religieuze 3D decoratie" />
+            <div class="product-card-body">
+              <h3>Religieuze decoratie</h3>
+              <p>Decoratieve en betekenisvolle 3D-prints.</p>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="images/product-05.jpg" alt="Kentekenplaathouder op maat" />
+            <div class="product-card-body">
+              <h3>Kentekenproducten</h3>
+              <p>Gepersonaliseerd met nummer, tekst of logo.</p>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="images/product-06.jpg" alt="Gepersonaliseerd geboortecadeau" />
+            <div class="product-card-body">
+              <h3>Naam- en geboortecadeaus</h3>
+              <p>Unieke cadeaus met naam en geboortedetails.</p>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="images/product-07.jpg" alt="Gepersonaliseerde naam sleutelhangers" />
+            <div class="product-card-body">
+              <h3>Naam-sleutelhangers</h3>
+              <p>Persoonlijk, opvallend en in meerdere kleuren mogelijk.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section id="products">
-<h2>Products</h2>
+    <section class="section section-dark" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Galerij</span>
+          <h2>Een selectie van ons werk</h2>
+          <p>Klik op een foto om deze groter te bekijken.</p>
+        </div>
 
-<p>
-🖨️ Custom keychains<br>
-🏠 Home decorations<br>
-🎨 Wall designs<br>
-🧩 3D models<br>
-⚙️ Custom projects
-</p>
+        <div class="gallery-grid">
+          <button class="gallery-item reveal" data-full="images/product-01.jpg"><img src="images/product-01.jpg" alt="AVS3DP product 1"></button>
+          <button class="gallery-item reveal" data-full="images/product-02.jpg"><img src="images/product-02.jpg" alt="AVS3DP product 2"></button>
+          <button class="gallery-item reveal" data-full="images/product-03.jpg"><img src="images/product-03.jpg" alt="AVS3DP product 3"></button>
+          <button class="gallery-item reveal" data-full="images/product-04.jpg"><img src="images/product-04.jpg" alt="AVS3DP product 4"></button>
+          <button class="gallery-item reveal" data-full="images/product-05.jpg"><img src="images/product-05.jpg" alt="AVS3DP product 5"></button>
+          <button class="gallery-item reveal" data-full="images/product-06.jpg"><img src="images/product-06.jpg" alt="AVS3DP product 6"></button>
+          <button class="gallery-item reveal" data-full="images/product-07.jpg"><img src="images/product-07.jpg" alt="AVS3DP product 7"></button>
+          <button class="gallery-item reveal" data-full="images/product-08.jpg"><img src="images/product-08.jpg" alt="AVS3DP product 8"></button>
+          <button class="gallery-item reveal" data-full="images/product-09.jpg"><img src="images/product-09.jpg" alt="AVS3DP product 9"></button>
+          <button class="gallery-item reveal" data-full="images/product-10.jpg"><img src="images/product-10.jpg" alt="AVS3DP product 10"></button>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Klaar om jouw idee te laten printen?</h2>
+          <p>
+            Stuur een beschrijving, foto of voorbeeld via WhatsApp. Vermeld de gewenste afmeting,
+            kleur, hoeveelheid en wanneer je het nodig hebt.
+          </p>
 
+          <div class="contact-list">
+            <a href="https://wa.me/5977197175" target="_blank" rel="noopener">
+              <strong>WhatsApp</strong>
+              <span>+597 719 7175</span>
+            </a>
+            <a href="mailto:avs3dp23@gmail.com">
+              <strong>E-mail</strong>
+              <span>avs3dp23@gmail.com</span>
+            </a>
+            <div>
+              <strong>Locatie</strong>
+              <span>Suriname</span>
+            </div>
+          </div>
+        </div>
 
-<section id="contact">
+        <form class="quote-form reveal" id="quoteForm">
+          <h3>Snelle offerteaanvraag</h3>
+          <label>
+            Naam
+            <input type="text" id="name" placeholder="Jouw naam" required />
+          </label>
+          <label>
+            Telefoonnummer
+            <input type="tel" id="phone" placeholder="+597 ..." />
+          </label>
+          <label>
+            Wat wil je laten maken?
+            <textarea id="message" rows="5" placeholder="Beschrijf je idee, formaat, kleur en aantal..." required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Verstuur via WhatsApp</button>
+          <small>Het formulier opent WhatsApp met jouw gegevens ingevuld.</small>
+        </form>
+      </div>
+    </section>
+  </main>
 
-<h2>Contact AVS3DP</h2>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="AVS3DP logo" />
+        <div>
+          <strong>AVS3DP</strong>
+          <span>Professional 3D Printing</span>
+        </div>
+      </div>
+      <p>© <span id="year"></span> AVS3DP. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
 
-<p>
-📱 WhatsApp: +597 7197175
-</p>
+  <a class="whatsapp-float" href="https://wa.me/5977197175?text=Hallo%20AVS3DP,%20ik%20wil%20graag%20informatie." target="_blank" rel="noopener" aria-label="Chat met AVS3DP via WhatsApp">
+    <span>WhatsApp</span>
+  </a>
 
-<p>
-✉️ Email: avs3dp23@gmail.com
-</p>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Sluiten">×</button>
+    <img src="" alt="Vergrote productfoto" />
+  </div>
 
-<a class="button" 
-href="https://wa.me/5977197175">
-Message on WhatsApp
-</a>
-
-</section>
-
-
-<footer>
-<p>
-© 2026 AVS3DP - 3D Printing Solutions
-</p>
-</footer>
-
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
