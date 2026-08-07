@@ -78,16 +78,10 @@ button { color: inherit; }
 .hero-visual { position: absolute; z-index: 0; inset: 0 -10vw 0 32%; }
 .hero-image-frame { width: 100%; height: 100%; overflow: hidden; position: relative; }
 .hero-image-frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #050505 0%, transparent 30%), linear-gradient(180deg, rgba(5,5,5,.18), transparent 60%, #050505); pointer-events: none; }
-.hero-background, .hero-mobile-original, .nozzle-source { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: 58% center; transform: scale(1.02); }
-.hero-mobile-original { display: none; }
+.hero-background, .original-nozzle-sprite { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: 58% center; transform: scale(1.02); }
 .exact-nozzle-motion { position: absolute; z-index: 1; inset: 0; pointer-events: none; animation: original-nozzle-scan 3.8s cubic-bezier(.55,.05,.35,.95) infinite alternate; will-change: transform; }
-.nozzle-source { user-select: none; }
-.nozzle-tube { clip-path: polygon(69.1% 36.2%,69.0% 33.3%,68.9% 29.5%,69.1% 26.7%,69.6% 24.5%,70.3% 23.1%,71.2% 22.5%,72.2% 22.8%,73.0% 24.0%,73.6% 26.0%,74.0% 28.7%,74.1% 32.0%,74.0% 35.7%,73.5% 35.8%,73.6% 32.0%,73.5% 29.0%,73.1% 26.4%,72.6% 24.7%,71.9% 23.7%,71.2% 23.4%,70.6% 23.8%,70.1% 25.0%,69.7% 27.0%,69.6% 29.7%,69.7% 33.2%,69.7% 36.2%); }
-.nozzle-chain { clip-path: polygon(73.5% 30.0%,75.0% 28.9%,77.0% 29.2%,78.0% 31.1%,77.9% 34.7%,76.8% 36.9%,74.0% 36.8%,73.4% 34.7%); }
-.nozzle-body { clip-path: polygon(67.0% 35.0%,68.3% 34.5%,71.2% 34.8%,72.2% 35.6%,73.6% 35.4%,74.7% 37.0%,74.8% 44.8%,73.5% 46.8%,72.0% 47.7%,71.8% 49.6%,70.9% 51.0%,69.1% 50.9%,68.5% 48.5%,67.5% 47.2%,67.0% 45.4%); }
-.nozzle-beam { clip-path: polygon(69.4% 47.7%,70.9% 47.7%,70.7% 50.5%,70.3% 53.8%,69.8% 50.5%); filter: drop-shadow(0 0 6px rgba(255,57,35,.9)); animation: original-nozzle-glow .72s ease-in-out infinite alternate; }
+.original-nozzle-sprite { user-select: none; filter: drop-shadow(0 0 4px rgba(255,55,35,.16)); }
 @keyframes original-nozzle-scan { 0% { transform: translateX(-13px); } 34% { transform: translateX(9px); } 62% { transform: translateX(-5px); } 100% { transform: translateX(13px); } }
-@keyframes original-nozzle-glow { from { opacity: .72; } to { opacity: 1; } }
 .print-status { position: absolute; z-index: 2; right: 10vw; bottom: 84px; display: grid; grid-template-columns: 10px auto; column-gap: 11px; padding: 15px 18px; min-width: 180px; border: 1px solid rgba(255,255,255,.18); background: rgba(5,5,5,.72); backdrop-filter: blur(12px); }
 .print-status i { width: 8px; height: 8px; margin-top: 4px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 5px rgba(240,24,45,.13); animation: pulse 1.8s infinite; }
 @keyframes pulse { 50% { box-shadow: 0 0 0 9px rgba(240,24,45,0); } }
@@ -250,9 +244,6 @@ button { color: inherit; }
   .hero-visual { inset: 0 -25vw 0 24%; opacity: .76; }
   .hero::before { background: linear-gradient(90deg, #050505 0%, rgba(5,5,5,.96) 36%, rgba(5,5,5,.47) 67%, rgba(5,5,5,.2)), linear-gradient(180deg, transparent 55%, #050505 100%); }
   .hero-copy { max-width: 650px; }
-  .hero-background { display: none; }
-  .hero-mobile-original { display: block; }
-  .exact-nozzle-motion { display: none; }
   .about-grid { column-gap: 60px; }
   .contact-grid { gap: 45px; }
 }
@@ -271,7 +262,7 @@ button { color: inherit; }
   .main-nav a::after { display: none; }
   .hero { height: auto; min-height: 840px; padding: 120px 0 88px; }
   .hero-visual { inset: 22% -48% 0 8%; opacity: .62; }
-  .hero-mobile-original { object-position: 61% center; }
+  .hero-background, .original-nozzle-sprite { object-position: 61% center; }
   .hero::before { background: linear-gradient(90deg, #050505 0%, rgba(5,5,5,.89) 60%, rgba(5,5,5,.32)), linear-gradient(180deg, #050505 0%, transparent 50%, #050505 94%); }
   .hero-copy { align-self: start; padding-top: 0; }
   .hero h1 { font-size: clamp(66px, 16vw, 110px); letter-spacing: -5px; }
@@ -337,5 +328,5 @@ button { color: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
-  .exact-nozzle-motion, .nozzle-beam { animation: none; }
+  .exact-nozzle-motion { animation: none; }
 }
