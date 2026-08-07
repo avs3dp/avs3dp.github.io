@@ -1,14 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1680" height="945" viewBox="0 0 1680 945">
-  <defs>
-    <clipPath id="original-nozzle" clipPathUnits="userSpaceOnUse">
-      <path d="M1123 334 L1162 331 L1193 334 L1211 341 L1244 338 L1258 351 L1258 435 L1247 449 L1216 460 L1208 473 L1196 484 L1165 483 L1153 463 L1136 457 L1124 444 Z"/>
-      <path d="M1167 340 C1163 310 1160 273 1166 251 C1171 231 1185 220 1200 220 C1217 220 1230 235 1238 255 C1248 279 1248 309 1241 341" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
-      <path d="M1238 342 C1239 316 1247 298 1262 295 C1278 292 1292 311 1294 342" fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round"/>
-      <path d="M1161 452 L1204 452 L1196 483 L1185 506 L1173 506 L1162 483 Z"/>
-      <path d="M1179 470 L1186 470 L1186 510 L1179 510 Z"/>
-    </clipPath>
-  </defs>
-  <g clip-path="url(#original-nozzle)">
-    <image href="avs3dp-hero.webp" x="0" y="0" width="1680" height="945" preserveAspectRatio="none"/>
-  </g>
+  <path fill="#fff" d="M1123 334 L1162 331 L1193 334 L1211 341 L1244 338 L1258 351 L1258 435 L1247 449 L1216 460 L1208 473 L1196 484 L1165 483 L1153 463 L1136 457 L1124 444 Z"/>
+  <path d="M1167 340 C1163 310 1160 273 1166 251 C1171 231 1185 220 1200 220 C1217 220 1230 235 1238 255 C1248 279 1248 309 1241 341" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1238 342 C1239 316 1247 298 1262 295 C1278 292 1292 311 1294 342" fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round"/>
+  <path fill="#fff" d="M1161 452 L1204 452 L1196 483 L1185 506 L1173 506 L1162 483 Z"/>
+  <path fill="#fff" d="M1179 470 L1186 470 L1186 510 L1179 510 Z"/>
 </svg>
